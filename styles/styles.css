@@ -22,7 +22,7 @@ img {
 }
 
 p {
-  padding: 0px;
+  padding: 0;
 }
 
 main {
@@ -51,6 +51,6 @@ main img {
 
 footer {
   margin-top: 15px;
-  border-top: 1px soild #000;
+  border-top: 1px solid #000;
   text-align: center;
 }
