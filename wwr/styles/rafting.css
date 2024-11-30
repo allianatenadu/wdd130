@@ -4,6 +4,7 @@
   --secondary-color: #fefefe; /* Page background and main text */
   --accent-color: #ffff; /* Hero section background */
   --light-color: #67a192; /* Button and hover effects */
+  --dark-background: #0c0b10;
 }
 
 /* General Reset */
@@ -70,7 +71,7 @@ header nav ul li a:hover {
 
 .hero h1 {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Correct centering offset */
   font-size: 3rem;
@@ -91,7 +92,7 @@ header nav ul li a:hover {
     255,
     0.8
   ); /* Semi-transparent white background */
-  color: #000; /* Dark text for readability */
+  color: #333; /* Dark text for readability */
   border-radius: 8px; /* Optional: Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
   z-index: 1; /* Ensures it stays above the image */
@@ -104,8 +105,7 @@ header nav ul li a:hover {
 }
 
 .hero article p {
-  margin: 0;
-  line-height: 1.6; /* Improves text readability */
+  text-align: justify;
 }
 
 /* Section Styling */
