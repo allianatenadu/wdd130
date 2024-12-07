@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with White Water Rafting for inquiries, reservations, or suggestions."
+    />
+    <title>Contact Us - White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css" />
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <img src="images/water_radting_logo.jpg" alt="White Water Rafting Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <section>
+        <h1>Contact Us</h1>
+        <p>
+          We’d love to hear from you! Please use the information below or the
+          form to reach out.
+        </p>
+
+        <!-- Company Information -->
+        <div class="company-info">
+          <h2>Our Office</h2>
+          <p>
+            <strong>Address:</strong> 123 River Rapids Lane, Adventure Town, AT
+            56789
+          </p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> info@raftingadventures.com</p>
+
+          <!-- Google Map -->
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=..."
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <!-- Employee Profiles -->
+        <div class="employee-profiles">
+          <h2>Meet Our Team</h2>
+          <div class="profiles-grid">
+            <div class="profile">
+              <img src="images/download.png" alt="Smiling employee" />
+              <p><strong>John Doe</strong> - Customer Support</p>
+            </div>
+            <div class="profile">
+              <img src="images/download.png" alt="Smiling employee" />
+              <p><strong>Jane Smith</strong> - Reservations Specialist</p>
+            </div>
+            <div class="profile">
+              <img src="images/download.png" alt="Smiling employee" />
+              <p><strong>Mark Johnson</strong> - Adventure Guide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <fieldset>
+                <legend>Purpose of Message:</legend>
+                <label>
+                  <input type="radio" name="purpose" value="general" required />
+                  General Inquiry
+                </label>
+                <label>
+                  <input type="radio" name="purpose" value="reservation" />
+                  Reservation Question
+                </label>
+                <label>
+                  <input type="radio" name="purpose" value="suggestion" />
+                  Website Suggestion
+                </label>
+              </fieldset>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <label>
+                <input type="checkbox" name="newsletter" />
+                Subscribe me to the monthly newsletter
+              </label>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 White Water Rafting Adventures. All rights reserved.</p>
+      <p>
+        <a href="images/wireframe.png" target="_blank">View Wireframe</a>
+      </p>
+    </footer>
+  </body>
+</html>
