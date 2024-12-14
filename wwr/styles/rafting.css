@@ -1,4 +1,3 @@
-/* Define CSS Variables */
 :root {
   --primary-color: #13644e; /* Header and footer background */
   --secondary-color: #fefefe; /* Page background and main text */
@@ -9,7 +8,8 @@
 
 /* General Reset */
 body {
-  font-family: "Lora", serif;
+  font-family: "Lora", sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: var(--secondary-color);
@@ -82,7 +82,7 @@ header nav ul li a:hover {
 
 .hero article {
   position: absolute;
-  bottom: 35%; /* Positions the article near the bottom of the hero section */
+  bottom: 25%; /* Positions the article near the bottom of the hero section */
   left: 10%; /* Adds some spacing from the left */
   width: 80%; /* Adjust width to fit the design */
   padding: 20px;
@@ -121,6 +121,244 @@ section img {
   width: 100%;
   margin: 10px 0;
   border: 1px solid #ccc;
+}
+
+/* index.html*/
+.newsletter {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7eeef; /* Light Background Shade */
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  color: #13644e;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #0d0c11;
+}
+
+.newsletter input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #13644e;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  width: 80%;
+  max-width: 400px;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--light-color);
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  color: #13644e;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #0d0c11;
+}
+
+.newsletter input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #13644e;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  width: 80%;
+  max-width: 400px;
+}
+
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #67a192; /* Light Color */
+}
+
+.cta h2 {
+  font-size: 1.8rem;
+  color: #fefefe;
+  margin-bottom: 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.grid-item h3 {
+  font-size: 1.5rem;
+  color: #13644e;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  color: #0d0c11;
+}
+
+/* trips.html*/
+/* Call to Action */
+.call-to-action {
+  text-align: center;
+  background-color: #a4c9df;
+  padding: 2rem;
+  color: #13644e;
+}
+
+.call-to-action h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action .btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #107b61;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.call-to-action .btn:hover {
+  background-color: #13644e;
+}
+
+/* Trip Details Section */
+.trip-details {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+}
+
+.trip-details h2 {
+  font-size: 2rem;
+  color: #13644e; /* Primary color for the heading */
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Trip Cards */
+.trip-details .trip {
+  border: 1px solid #a4c9df; /* Accent color border */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trip-details .trip:hover {
+  transform: translateY(-5px); /* Hover effect for elevation */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trip-details .trip img {
+  max-width: 100%; /* Make images responsive */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 1rem;
+  height: auto;
+  object-fit: cover; /* Ensure images are not distorted */
+}
+
+.trip-details .trip h3 {
+  color: #107b61; /* Secondary color for trip titles */
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.trip-details .trip p {
+  font-size: 1rem;
+  color: #0c0b10; /* Dark text for readability */
+  line-height: 1.5;
+}
+
+/* Responsive Grid Layout for Cards */
+.trip-details {
+  gap: 2rem; /* Space between elements */
+}
+
+.trip-details .trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Space between trip cards */
+  width: 100%;
+  max-width: 1200px; /* Constrain the cards to a manageable width */
+}
+
+/* Trip Table */
+.trip-table {
+  padding: 2rem 1rem;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 1rem;
+  border: 1px solid #107b61;
+}
+
+.trip-table th {
+  background-color: #13644e;
+  color: #fefefe;
+}
+
+.trip-table td {
+  background-color: #f7eeef;
 }
 
 /*history*/
@@ -271,6 +509,8 @@ footer {
   padding: 10px 20px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  max-width: 1200px; /* Control the max width */
+  margin: 10 auto; /* Center the footer */
 }
 
 footer nav {
